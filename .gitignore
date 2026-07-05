@@ -1,0 +1,26 @@
+# Archives are kept locally and not uploaded.
+*.zip
+*.rar
+*.7z
+
+# Keil/MDK and common build outputs
+**/Objects/
+**/Listings/
+**/Debug/
+**/Release/
+**/build/
+**/bin/
+**/obj/
+
+# Local editor and OS metadata
+**/.vscode/
+.vs/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*~
