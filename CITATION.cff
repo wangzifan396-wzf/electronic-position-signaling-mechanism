@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this firmware snapshot, please cite this versioned software release."
+type: software
+title: "Electronic position signaling and inner-tube control firmware"
+version: "1.0.0"
+date-released: "2026-10-09"
+authors:
+  - family-names: "Wang"
+    given-names: "Zifan"
+repository-code: "https://github.com/wangzifan396-wzf/electronic-position-signaling-mechanism"
+url: "https://github.com/wangzifan396-wzf/electronic-position-signaling-mechanism/releases/tag/v1.0.0"
+license: MIT
+keywords:
+  - STM32
+  - SDM18
+  - ESP8266
+  - coring
+  - electronic signaling
+abstract: "Two author-designated final STM32F1 firmware variants for electronic position signaling and inner-tube control in a ground-based coring-mechanism prototype. Vendor components retain their original licenses."

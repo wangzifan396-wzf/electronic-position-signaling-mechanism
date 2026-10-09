@@ -1,0 +1,2 @@
+# Preserve source-snapshot bytes across operating systems; hashes are byte-based.
+* -text

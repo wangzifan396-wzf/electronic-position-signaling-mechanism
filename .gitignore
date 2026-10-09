@@ -1,26 +1,27 @@
-# Archives are kept locally and not uploaded.
-*.zip
-*.rar
-*.7z
-
-# Keil/MDK and common build outputs
-**/Objects/
-**/Listings/
-**/Debug/
-**/Release/
-**/build/
-**/bin/
-**/obj/
-
-# Local editor and OS metadata
-**/.vscode/
-.vs/
+# Private connection configuration
+**/Core/Inc/wifi_config.h
+*.env
+.env*
+# Keil build outputs and personal IDE/debug state
+**/MDK-ARM/SDM18-stm32-HAL/
+*.o
+*.obj
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.lnp
+*.dep
+*.d
+*.crf
+*.htm
+*.uvoptx
+*.uvguix.*
+**/DebugConfig/
+.mxproject
+*.bak
+*.Bak
+__pycache__/
 .DS_Store
 Thumbs.db
-Desktop.ini
-
-# Logs and temporary files
-*.log
-*.tmp
-*.bak
-*~
