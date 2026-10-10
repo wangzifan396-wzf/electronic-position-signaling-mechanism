@@ -1,5 +1,15 @@
 # Changelog
 
+## Paper-supporting documentation update — 2026-10-10
+
+- Reframed the repository overview and navigation around the manuscript's supporting firmware, mechanical models and engineering drawings.
+- Recorded the author's confirmation that the manuscript's main experiments primarily used `firmware/wifi-once`; `firmware/wifi-retry` remains an alternative final source snapshot from a different experimental period.
+- Clarified that the snapshots retain their respective startup defaults, while the manuscript reports the experimental settings to use for reproduction. Documented the five RAM-only settings supported by runtime commands and distinguished them from compile-time constants.
+- Updated the code/material availability wording and clarified which materials are in the fixed firmware release and which were added to `main`.
+- This update changes documentation only. Original source code, startup defaults, historical project files, models, drawings, the `v1.0.0` tag and release assets are unchanged.
+
+中文：按论文配套研究资料优化仓库说明与入口；记录作者确认的主要试验版本为一次连接版，重试连接版保留另一实验阶段的最终源码。两版初始化默认值原样保留，复现参数以论文为准；明确五项运行时 RAM 参数与编译期常量的区别。此次仅修改说明文档，源码、默认值、历史项目、模型、图纸及固定固件标签和发布附件不变。
+
 ## Repository material update — 2026-10-10
 
 - Restored all 24 originally uploaded root directories from commit `5d6e080df02d82a73eb847e18485b2bdb33146d4`, preserving their files unchanged, including all 16 original mechanical model files.

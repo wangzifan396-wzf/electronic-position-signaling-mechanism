@@ -28,6 +28,16 @@ The ESP8266 is configured as a WiFi station and connects to the TCP server defin
 
 ESP8266以STA方式接入现有WiFi，并主动连接本地配置的TCP服务器。两版都不是网页服务端；重试版的重试条件是连接标志为0，不能等同于完整断线恢复。
 
+## Experimental settings / 试验参数口径
+
+The author confirms that the main experiments reported in the manuscript primarily used the single-attempt implementation, [wifi-once](../firmware/wifi-once). [wifi-retry](../firmware/wifi-retry) is retained as an alternative final source snapshot from another stage of the experimental work. The two snapshots retain their respective startup defaults; configure the settings reported in the manuscript when reproducing a particular experiment.
+
+作者确认，论文报告的主要试验以[一次连接版](../firmware/wifi-once)为主；[重试连接版](../firmware/wifi-retry)作为另一实验阶段保留的最终源码一并公开。两份源码保留各自的初始化默认值，复现具体试验时按论文报告的参数配置。
+
+Five settings can be changed through the commands below: the landed, upper/ground, core-full and suspected-jamming range thresholds, and the motor software-delay setting. These changes are stored in RAM; restarting the MCU restores the defaults defined in the selected source. The distance-buffer length, nominal control interval, landed/alarm pauses and WiFi retry interval are compile-time constants rather than remote command settings.
+
+下述指令支持运行时修改五项参数：到位阈值、地面/上提阈值、满心阈值、卡心极差阈值和电机软件延时参数。修改值保存在 RAM 中，MCU 重启后恢复所选源码的默认值。距离缓存长度、名义控制间隔、到位与报警暂停时间，以及 WiFi 重试间隔属于编译期常量；修改这些设置需要修改源码并重新编译。
+
 ## Commands / 指令
 
 Send raw ASCII command text, one command per line, terminated by LF or CRLF. Do not wrap it in JSON or add a prefix. CR is ignored and LF completes a command. Commands longer than 100 characters are ignored. Send one command and wait for its response before sending another; the implementation has no command queue.
