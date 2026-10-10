@@ -1,6 +1,16 @@
-# Electronic position signaling and inner-tube control firmware
+# Electronic position signaling mechanism: firmware, models and drawings
 
 [中文说明](README.zh-CN.md) · [Latest release](https://github.com/wangzifan396-wzf/electronic-position-signaling-mechanism/releases/latest) · [Code availability text](docs/CODE_AVAILABILITY.md)
+
+## Start here
+
+| Material | Location |
+|---|---|
+| Two latest firmware variants | [wifi-once](firmware/wifi-once) · [wifi-retry](firmware/wifi-retry) · [fixed v1.0.0 release](https://github.com/wangzifan396-wzf/electronic-position-signaling-mechanism/releases/tag/v1.0.0) |
+| Mechanical models and thesis engineering drawings | [Mechanical directory](%E6%9C%BA%E6%A2%B0/) · [Drawing index and PDFs](%E6%9C%BA%E6%A2%B0/%E5%B7%A5%E7%A8%8B%E5%9B%BE/) |
+| All 24 original uploaded project directories | [Original project index](docs/PROJECT_FILES.md) |
+
+The original project directories, including the mechanical models, are present in the current `main` branch. The two final variants in `firmware/` remain the latest firmware. The engineering drawings added on 2026-10-10 correspond to the author's thesis drawing set; this addition does not change the fixed `v1.0.0` firmware release.
 
 STM32F1 research firmware for the electronic signaling and inner-tube transport functions of a ground-based coring-mechanism prototype. An SDM18 ranging module supplies distance data; EN/STP/DIR outputs command a stepper driver; an ESP8266 AT interface provides TCP status transmission and parameter/control commands.
 
@@ -21,7 +31,7 @@ Both variants use a 10-entry distance buffer, a 2 mm suspected-jamming range thr
 
 1. Download the tagged source archive or clone this repository. Choose **one** variant.
 2. Copy `Core/Inc/wifi_config.example.h` to `Core/Inc/wifi_config.h` within that variant. Set the WiFi SSID/password and TCP server IP/port. The local file is ignored by Git; the placeholder example is not a working network configuration.
-3. Open `MDK-ARM/SDM18-stm32-HAL.uvprojx` in Keil µVision. The saved project uses ARM Compiler **5.06 update 7, build 960**, the `STM32F103xE` definition, and the STM32F1 device pack **2.4.1**. Required HAL/CMSIS sources are included; old binaries and personal IDE files are excluded.
+3. Open `MDK-ARM/SDM18-stm32-HAL.uvprojx` in Keil µVision. The saved project uses ARM Compiler **5.06 update 7, build 960**, the `STM32F103xE` definition, and the STM32F1 device pack **2.4.1**. Required HAL/CMSIS sources are included; old binaries and personal IDE files are excluded from these two curated `firmware/` projects.
 4. Check the target MCU, clock, memory map and Flash algorithm against the actual board, then build. Configure a matching SWD programmer separately if downloading to hardware.
 5. Run a TCP server on the configured host before connection attempts. These two firmware folders do not contain the original host application or a browser interface. See [Protocol and interface guide](docs/PROTOCOL.md).
 
@@ -30,6 +40,9 @@ The IOC and project Device records indicate **STM32F103RC/xE**, but some saved F
 ## Repository contents
 
 ```text
+机械/                    Restored original models and engineering-drawing index
+机械/工程图/              Original PDF, PNG, SolidWorks drawings and thesis figures
+docs/PROJECT_FILES.md    Index of all 24 restored original directories
 firmware/wifi-once/       Final variant with one startup WiFi attempt
 firmware/wifi-retry/      Final variant with failed-connection retries
 docs/PROTOCOL.md         Pin assignments, commands and status format
@@ -41,9 +54,9 @@ CITATION.cff             Versioned software citation
 THIRD_PARTY_NOTICES.md   Licenses and retained notices
 ```
 
-The source-to-release manifest records the retained files. The only change to each retained original file is the extraction of four network macros in `Core/Src/main.c` into a local configuration include; `wifi_config.example.h` is new. Unused library packages, generated binaries, IDE caches and debugger-specific settings are omitted. No firmware algorithms were changed, and no new experiments were added.
+The source-to-release manifest records the retained files in the two curated `firmware/` projects and the fixed `v1.0.0` release. In those projects, the only change to each retained original file is the extraction of four network macros in `Core/Src/main.c` into a local configuration include; `wifi_config.example.h` is new. Unused library packages, generated binaries, IDE caches and debugger-specific settings are omitted from those curated projects. The restored original directories keep their original files, including any such artifacts. No firmware algorithms were changed, and no new experiments were added.
 
-Earlier uploads remain in the repository's Git history as development records. They are not the current release and may contain obsolete network configuration; the owner has confirmed that the old WiFi configuration is no longer in use. Use the fixed release or current `firmware/` folders for these two final source versions.
+On 2026-10-10, all 24 original uploaded directories were restored to `main` from commit `5d6e080df02d82a73eb847e18485b2bdb33146d4`, without modifying their original files. This includes the original final-version folder snapshots and 16 original mechanical model files. Their contents can be browsed through the [project index](docs/PROJECT_FILES.md). Original snapshots may contain obsolete network configuration; the owner has confirmed that the old WiFi configuration is no longer in use. For the two final firmware versions with example configuration and release documentation, use the current `firmware/` folders or the fixed `v1.0.0` release. The added engineering drawings are on `main`, not in the unchanged `v1.0.0` tag or release archives.
 
 ## Cite this software
 
@@ -55,4 +68,4 @@ The repository documents firmware implementation. It does not itself establish s
 
 ## License
 
-The project author’s original contributions and release documentation are licensed under [MIT](LICENSE). STMicroelectronics and Arm components retain their original licenses and copyright notices; the root MIT license does not replace them. See [Third-party notices](THIRD_PARTY_NOTICES.md).
+The project author’s original contributions, including original code, self-drawn engineering figures and release documentation, are licensed under [MIT](LICENSE). Vendor code, supplied models and other third-party materials retain their original licenses and notices; the root MIT license does not replace them. The restored original directories are not uniformly MIT-licensed. See [Third-party notices](THIRD_PARTY_NOTICES.md).

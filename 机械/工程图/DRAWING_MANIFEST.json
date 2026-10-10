@@ -1,0 +1,126 @@
+{
+  "date_added": "2026-10-10",
+  "source": "Author original engineering drawing set; thesis figures 3-1 through 3-4 retained as exact embedded image bytes.",
+  "files": [
+    {
+      "path": "机械/工程图/PDF/90外管.pdf",
+      "size": 72516,
+      "sha256": "885f1b228974084af304c3f13ac78a87d92c1b2183d179a304cc3fa53ce69e95",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/90外管.SLDDRW",
+      "size": 223758,
+      "sha256": "2ce80b71384264fa131770cb5dd85ec4c4507fe1786e9afcdf7db525faf941f1",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PNG/90外管_01.png",
+      "size": 596057,
+      "sha256": "f0bb657269af7625e4c45454ec02d0cd9e48819ec66d9e8d596b61994a96708a",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PDF/65内管.pdf",
+      "size": 69882,
+      "sha256": "d3c37a752100e4f832d6c0fc446afb509783d859c23f240f6d3cb1dea9fe9821",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/65内管.SLDDRW",
+      "size": 220131,
+      "sha256": "b9cfb2c28fce8572bd77b6dfb5d60def853b0b670b9f49ddbf2d09fd95ce0976",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PNG/65内管_01.png",
+      "size": 637599,
+      "sha256": "2e945aae1649aef4514fc06cff2e906fd3fbb65250f5689649107b46b04e20bf",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PDF/齿条.pdf",
+      "size": 65676,
+      "sha256": "f886a2b22054bc6904ad45df8f7c2475f61f404fb2c57a89ff658e92ec1fdd76",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/齿条.SLDDRW",
+      "size": 358098,
+      "sha256": "69baffdbf5610a3c2218b40d4139f66f0fc11c0dbef4aafb5757685a77a35912",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PNG/齿条_01.png",
+      "size": 734949,
+      "sha256": "3047cada67b424784cb7afdc1ee7b55ca68116ea6273191d62f8c7fb2c59eba9",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PDF/齿轮.pdf",
+      "size": 51506,
+      "sha256": "987729387bb048482ce7f5d3b622d2e8ed115b51157420cea9447b92eea2c324",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/齿轮.SLDDRW",
+      "size": 214246,
+      "sha256": "7d0b4f1838c9bd21176e3f23c7e6f53efef36ba5918931e6c4a69bf8e0dfb25a",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PNG/齿轮_01.png",
+      "size": 593701,
+      "sha256": "5468344fa12ada4b3458c595e89a5bec627316ac437af840e553e664cfec56b9",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PDF/模拟岩芯.pdf",
+      "size": 43723,
+      "sha256": "4367d29eeb3b9bf299b60b9ca0fb709ae2b0f2861afbc407747656d632a0ee01",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/模拟岩芯.SLDDRW",
+      "size": 114098,
+      "sha256": "1534492764397f512fb7ee4a801a0f6b1fb9f3788e7e4e0a6c8ea087e6f26150",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/PNG/模拟岩芯_01.png",
+      "size": 345262,
+      "sha256": "dfff91c2f6c935c3e3e68b1c4ab518f0e03c541902384fbe82906d0fca8a45b8",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/SolidWorks/齿条.SLDPRT",
+      "size": 759202,
+      "sha256": "9bf21d73dafaf3189450a6112a11e527dff63d510852d3353d6d15ab6060471b",
+      "source_kind": "author_original_engineering_drawing_set"
+    },
+    {
+      "path": "机械/工程图/论文原图/图3-1_外管.png",
+      "size": 395140,
+      "sha256": "7d9bfa01f3dbeadb3d2598952fe09e4d9e12d222d722158e9c44316b74634209",
+      "source_kind": "thesis_embedded_original"
+    },
+    {
+      "path": "机械/工程图/论文原图/图3-2_齿条.png",
+      "size": 886006,
+      "sha256": "90ffb634b4e41ff72e1431ed7cd35f65b280b7edd3f6d089de55e0714d296dd5",
+      "source_kind": "thesis_embedded_original"
+    },
+    {
+      "path": "机械/工程图/论文原图/图3-3_齿轮.png",
+      "size": 439317,
+      "sha256": "3dbafc540c2c88eea4c3d97ae18a9f0fc0826a93cff906e99d3634970004dd07",
+      "source_kind": "thesis_embedded_original"
+    },
+    {
+      "path": "机械/工程图/论文原图/图3-4_内管总成.png",
+      "size": 499226,
+      "sha256": "62c9e6ff0119a8888ad1a93ac79399193bbb57d181941c55e57633700f7ff51a",
+      "source_kind": "thesis_embedded_original"
+    }
+  ]
+}
