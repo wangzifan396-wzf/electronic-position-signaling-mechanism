@@ -1,0 +1,50 @@
+{
+  "asset": "mechanism-overview.png",
+  "source": "Author's original thesis, Figure 2-2",
+  "source_caption_zh": "整体机构设计图",
+  "source_section": "2.2.1",
+  "source_package_media": "word/media/image3.png",
+  "extraction_date": "2026-10-11",
+  "modifications": "None; exact original embedded PNG bytes.",
+  "width_px": 1003,
+  "height_px": 862,
+  "bytes": 236504,
+  "sha256": "baf9d0decd9657f4888d2f5baac942af7361eee4ca67308d5fe0f79f515cb3bf",
+  "component_labels": [
+    {
+      "number": 1,
+      "zh": "外管总成",
+      "en": "outer-tube assembly"
+    },
+    {
+      "number": 2,
+      "zh": "齿条",
+      "en": "rack"
+    },
+    {
+      "number": 3,
+      "zh": "齿轮",
+      "en": "gear"
+    },
+    {
+      "number": 4,
+      "zh": "内管总成",
+      "en": "inner-tube assembly"
+    },
+    {
+      "number": 5,
+      "zh": "电子舱室",
+      "en": "electronics compartment"
+    },
+    {
+      "number": 6,
+      "zh": "岩心管",
+      "en": "core tube"
+    },
+    {
+      "number": 7,
+      "zh": "模拟岩心",
+      "en": "simulated core"
+    }
+  ]
+}

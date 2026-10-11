@@ -1,5 +1,13 @@
 # Changelog
 
+## Mechanism overview update — 2026-10-11
+
+- Added a concise bilingual introduction to the mechanism, its components and operating sequence, distinguishing inner-tube transport from manually coordinated external drilling and core extraction.
+- Added the original thesis overview diagram (Figure 2-2) without altering its image bytes, with bilingual component labels and a source/hash record.
+- The original project directories, firmware, models, engineering drawings and fixed `v1.0.0` release are unchanged.
+
+中文：补充中英文机构原理、部件说明及基本运行流程，明确内管输送与人工配合的外部钻进、取心操作；原样加入终稿图2-2及来源校验记录。原始工程目录、固件、模型、工程图和固定发布版本均未修改。
+
 ## Paper-supporting documentation update — 2026-10-10
 
 - Reframed the repository overview and navigation around the manuscript's supporting firmware, mechanical models and engineering drawings.

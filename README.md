@@ -6,6 +6,25 @@ This repository provides firmware, mechanical models and engineering drawings ac
 
 **The main experiments reported in the manuscript used the single-attempt implementation (`wifi-once`).** Both author-designated final implementations are retained. Experimental procedures, actual parameter settings and reported results are documented in the manuscript; use its settings when reproducing a reported test.
 
+## Mechanism overview
+
+The mechanism uses a stepper-driven gear-and-rack transmission to lower and retrieve the inner-tube assembly. The SDM18 ranging module supplies distance measurements to the STM32 controller for landed-position detection, core-full and suspected-jamming alarms, and retrieval stopping. The ESP8266 provides TCP communication with a host for distance and state reporting, parameter settings and manual-control commands.
+
+![Section and exploded views of the electronic position-signaling mechanism](docs/images/mechanism-overview.png)
+
+*Section and exploded views of the mechanism, reproduced unchanged from Figure 2-2 of the author's original thesis.*
+
+**Components:** 1 — outer-tube assembly; 2 — rack; 3 — gear; 4 — inner-tube assembly; 5 — electronics compartment; 6 — core tube; 7 — simulated core. [Image source record](docs/images/mechanism-overview.source.json)
+
+The mechanism transports the inner tube. A separate drilling unit performs drilling; its start and stop, core extraction and assembly reinstallation are coordinated manually by the operator.
+
+The basic operating sequence is:
+
+1. Install and lower the inner-tube assembly; stop and signal landing when the landed-position threshold is reached.
+2. Start the separate drilling unit and monitor core entry using the distance data. The controller evaluates buffered readings for core-full or suspected-jamming conditions.
+3. On an alert, the controller pauses and then reverses the inner-tube motion for retrieval.
+4. Stop retrieval at the configured upper-position threshold. The operator removes the assembly to extract the core and reinstalls it for the next run.
+
 ## Materials
 
 | Material | Entry point |
